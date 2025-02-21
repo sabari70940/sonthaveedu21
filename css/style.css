@@ -1,0 +1,823 @@
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+   
+}
+/*--------------------nav bar and banner start-------------*/
+.navbar {
+    background: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 10px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:white; /* Ensures text stays visible */
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other elements */
+    transition: all 0.3s ease-in-out;
+}
+
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    color: white !important;
+    margin: 0 10px;
+}
+.carousel-item {
+    position: relative;
+    
+}
+.carousel-item img {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures image scales properly */
+}
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+/*--------------------nav bar and banner end-------------*/
+
+/*--------------------owl small start-------------*/
+.owl-carousel .items {
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.owl-carousel .items img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 150px;
+}
+
+.owl-carousel .items p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Custom Arrows */
+.owl-nav button {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.owl-nav button.owl-prev {
+    left: -40px;
+}
+
+.owl-nav button.owl-next {
+    right: -40px;
+}
+
+/* Hover Effect */
+.owl-nav button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+#owlcarousel .item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+/*--------------------owl small end-------------*/
+/*--------------------  Hand pic start -------------*/
+.main-cards {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.property-cards {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.property-cards img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.property-info {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 77%;
+    height: 150px;
+    transform: translateX(-50%);
+    width: 140px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.badge-featured {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #d63384;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.project-logo {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+/*--------------------  Hand pic start -------------*/
+/*--------------------  video start -------------*/
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video-container .video {
+    flex: 1 1 45%;
+    max-width: 560px;
+}
+
+/* Set video size */
+video {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+/* Mobile view: Show only one video per slide */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container .video {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/*--------------------  video  end -------------*/
+
+/*--------------------  insight start -------------*/
+.containerinsight{
+    background-color: rgb(207, 187, 187);
+}
+.cardcard {
+    border: none;
+    width: 180px;  /* Adjust card width */
+    height: 300px; /* Adjust card height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px; /* Space for the logo */
+}
+.cardbody {
+flex-grow: 1; /* Ensures content fills available space */
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.logocontainer {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px; /* Adjust logo size */
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logocontainer img {
+    width: 40px; /* Adjust logo size */
+    height: auto;
+}
+
+
+#insightowl .item {
+    padding: 15px;
+}
+
+.owl-nav button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0, 0, 0, 0.3) !important;
+color: white !important;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+z-index: 1000; /* Ensure buttons are above other elements */
+}
+
+.owl-nav .owl-prev {
+left: 5px; /* Keep it inside on mobile */
+}
+
+.owl-nav .owl-next {
+right: 5px; /* Keep it inside on mobile */
+}
+.owl-nav .owl-prev {
+    left: -50px;
+}
+
+.owl-nav .owl-next {
+    right: -50px;
+}
+
+/*--------------------  insight end -------------*/
+/*--------------------  small banner start -------------*/
+.carouselcarousel{
+    max-width: 800px; /* Adjust width */
+    margin: auto; /* Centering */
+}
+.carouselitem img {
+    width: 100%;
+    height: 300px; /* Adjust height */
+    object-fit: cover;
+}
+
+.carousel-control-next {
+top: 50%; /* Centers the arrows */
+transform: translateY(-50%); /* Ensures perfect centering */
+width: 5%; /* Adjust width if needed */
+}
+/*--------------------  small banner end -------------*/
+
+/*--------------------  Book property start -------------*/
+.regcontainer {
+    background-color: rgb(212, 208, 202);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.free-badge {
+    background-color: #28a745;
+    color: white;
+    padding: 2px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.register {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+/*--------------------  Book property end  -------------*/
+
+/*--------------------  footer start  -------------*/
+.footer {
+    background-color: #1e90ff;
+    color: white;
+    padding-top: 40px;
+   
+    
+}
+.footer .icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.footer .icon-container i {
+    background: gold;
+    padding: 15px;
+    border-radius: 50%;
+    color: black;
+    font-size: 20px;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: gold;
+}
+.footer-bottom {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    
+}
+/*--------------------  footer end  -------------*/
+/*--------------------  contact start  -------------*/
+
+/* General Styles */
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 100px; 
+    padding: 20px; /* Added padding for smaller screens */
+}
+
+/* Contact Card */
+.contact-card {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-direction: row; /* Default desktop layout */
+}
+
+/* Contact Info Section */
+.contact-info {
+    position: relative;
+    width: 50%;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.contact-info img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.contact-info h2, 
+.contact-info p, 
+.contact-info .info-item {
+    position: relative;
+    z-index: 2;
+}
+
+/* Adds space inside input fields for placeholders */
+.form-control::placeholder {
+    padding-left: 10px; /* Space inside the input field */
+    opacity: 0.7; /* Optional: makes the placeholder slightly transparent */
+}
+
+/* Adds vertical margin between input fields */
+.form-control {
+    margin-bottom: 15px; /* Adds spacing between inputs */
+    padding-left: 12px;  /* Adjust placeholder spacing */
+    padding-right: 12px;
+}
+
+/* Adds spacing above the Send Message button */
+.btn-primary {
+    margin-top: 10px;
+}
+
+
+.contact-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* Contact Form Section */
+.contact-form {
+    padding: 30px;
+    width: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-card {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .contact-info {
+        width: 100%;
+        height: 300px; /* Set height for the image background */
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-wrapper {
+        padding: 10px;
+    }
+
+    .contact-info {
+        height: 250px; /* Reduce height for smaller devices */
+        padding: 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+
+/*-------------------  contact end  -------------*/
+/*-------------------  About start  -------------*/
+
+
+.hero {
+   
+    margin-top: 70px; /* Creates a gap below the navbar */
+}
+
+
+
+.about-section {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.mission-section {
+    background: #007bff;
+    color: white;
+    padding: 50px 0;
+}
+.values-section {
+    background: #f1f1f1;
+    padding: 50px 0;
+}
+.testimonial-section {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.testimonial-card img {
+    background-color: beige;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+/*-------------------  About end  -------------*/
+
+
+/*-------------------  Property Start  -------------*/
+
+.custom-property-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 10px;
+    max-width: 900px;
+        height: auto; /* Allow it to expand */
+        min-height: 250px; /* Ensures proper minimum height */
+        
+        flex-wrap: wrap; /* Ensures stacking on smaller screens */
+   
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch; 
+}
+
+.custom-carousel {
+    height: 100%;
+}
+
+.custom-carousel img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.custom-property-details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spread content evenly */
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+.custom-property-title {
+    font-size: 16px; /* Reduce title size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px; /* Reduce spacing */
+}
+
+.custom-price {
+    font-weight: bold;
+    color: #ff5733;
+}
+
+.custom-btn-container {
+    margin-top: auto; /* Push button to bottom */
+}
+
+.custom-btn-contact {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Reduce padding */
+    font-size: 14px; /* Reduce button text size */
+    border-radius: 5px;
+    width: 40%; /* Make it responsive */
+}
+.custom-property-card:hover {
+    transform: scale(1.02);
+}
+
+
+.custom-btn-contact:hover {
+    background: #218838;
+}
+
+/*-------------------   Property end -------------*/
+
+/*-------------------  nav bar start -------------*/
+.carousel-control-prev,
+.carousel-control-next {
+    display: none !important;
+}
+/*-------------------  navbar end -------------*/
+
+
+/*-------------------  property start -------------*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.fw-bold {
+    color: #28a745;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/*-------------------  property end -------------*/
+
+/*-------------------  details start -------------*/
+ /* Carousel Styling */
+ .carousel {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner img {
+    border-radius: 10px;
+    width: 100%;
+    min-height: 350px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+    filter: invert(100%);
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-indicators {
+    bottom: 10px;
+}
+
+.carousel-indicators button {
+    background-color: #007bff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: none;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #0056b3;
+}
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+}
+.house-img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.details {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.details h2 {
+    color: #343a40;
+}
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+}
+.details ol {
+    padding-left: 20px;
+}
+.details ol li {
+    padding: 5px 0;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+/* Sections */
+.features, .amenities, .location, .reviews, .contact-infos {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.features h3, .amenities h3, .location h3, .reviews h3, .contact-infos h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+   
+
+/*-------------------  details end -------------*/
